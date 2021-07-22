@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgba(46, 139, 86, 0.9), rgba(74, 94, 55, 0.9)), url(webdesigner-2443766_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* header */
+header#title_center {
+    text-align: center;
+    padding: 50px 0 20px 0;
+    line-height: 2.0;
+    text-shadow: 1px 1px 3px #555;
+}
+
+header#title_center h1 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+header#title_center small {
+    font-style: italic;
+}
+
+/* form container */
+#form_container {
+    background-color: rgba(13, 46, 43, 0.8);
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+.form_group label {
+    line-height: 1;
+    margin: 5px 1px;
+}
+
+.form_group p {
+    line-height: 2;
+    margin: 3px 0;
+}
+
+
+.form_control {
+    border: none;
+    padding: 2px 7px;
+    border-radius: 3px;
+}
+
+input[type ="radio"], input[type ="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+input[type="checkbox"], [type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 3px 7px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #111;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+#dropdown {
+    width: 100;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+    #form_container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #title_center h1 {
+        font-size: 20px !important;
+    }
+
+    small {
+        font-size: 14px;
+    }
+
+    #form_container {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 375px) {
+        #title_center {
+            line-height: 1 !important;
+        }
+
+        #title_center h1 {
+            font-size: 14px !important;
+        }
+
+        small {
+            font-size: 10px;
+        }
+
+        #form_container {
+            width: 100%;
+        }
+    
+    }
+}

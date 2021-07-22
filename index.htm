@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="title_center">
+        <h1>@Haryorhorlar01 Survey Form Project</h1>
+        <small>Make sure you fill in the correct details for each field</small>
+    </header>
+
+    <section id="form_container">
+        <form action="#" method="get">
+            <div class="form_group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="form_control">
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" class="form_control">
+            </div>
+           
+            <div class="form_group">
+                <label for="age">Age <small>(optional)</small> </label>
+                <input type="number" name="age" placeholder="Age" class="form_control">
+            </div>
+            
+            <div class="form_group">
+                <p>Which of the following best describes your current role</p>
+                 <select id="dropdown" name="role" class="form_control">
+                    <option value selected disabled>Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="self">Self Employed</option>
+                    <option value="employed">Employed</option>
+                    <option value="preferNot">Prefer not to say</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <p>What would you like to learn?</p>
+                <label><input type="radio" name="result" value="graphics" class="form_control">Graphics Design</label>
+                <label><input type="radio" name="result" value="frontend" class="form_control">Frontend Developer</label>
+                <label><input type="radio" name="result" value="backend" class="form_control">Backend Developer</label>
+                <label><input type="radio" name="result" value="fullstack" class="form_control">Fullstack Developer</label>
+            </div>
+            
+            <div class="form_group">
+                <p>What do you for fun?</p>
+                <label><input type="checkbox" name="fun" value="cooking" class="form_control">Cooking</label>
+                <label><input type="checkbox" name="fun" value="travel" class="form_control">Travel</label>
+                <label><input type="checkbox" name="fun" value="reading" class="form_control">Reading</label>
+                <label><input type="checkbox" name="fun" value="ourdoors" class="form_control">Outdoors activities like rock climbing,
+                hiking, cycling, etc.</label>
+                <label><input type="checkbox" name="fun" value="music" class="form_control">Music</label>
+                <label><input type="checkbox" name="fun" value="video" class="form_control">Video games</label>
+            </div>
+
+            <div class="form_group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here..." cols="40" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
